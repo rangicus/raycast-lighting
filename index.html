@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rangicus/raycast-lighting</title>
+
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <link rel="stylesheet" href="interface.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Raycast Lighting</h1>
+            <p>An example of 2D lighting using only raycasts and knowledge of vertices.</p>
+            <hr>
+
+            <div id="canvas"></div>
+
+            <hr>
+            <button onclick="clearWalls()" class="btn btn-danger">Clear Walls</button>
+
+            <p>
+                This is a 2D implementation of <a href="https://www.wikiwand.com/en/Ray_casting">ray casting</a> in order to create the illusion of sight.
+                You can click in one spot, then another to create a new wall.
+                If you hold Shift while doing the second click, it will begin a new wall in the same position, to make seamless angled walls.
+                If you hit Space on the second-to-last line of a continuous path, it will finish it for you, to make a seamless polygon.
+
+                The above "Clear Walls" button will erase all walls currently on the board, including the default ones used for demo purposes.
+            </p>
+        </div>
+
+        <script src="lib/jquery-3.5.1.min.js"></script>
+        <script src="lib/p5.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
