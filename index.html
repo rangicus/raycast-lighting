@@ -9,13 +9,18 @@
     <body>
         <div class="container">
             <h1>Raycast Lighting</h1>
-            <p>An example of 2D lighting using only raycasts and knowledge of vertices.</p>
+            <p>
+                An example of 2D lighting using only raycasts and knowledge of vertices. <br>
+                <a href="./fullscreen">Fullscreen</a>
+            </p>
             <hr>
 
-            <div id="canvas"></div>
+            <div id="container">
+                <iframe src="./fullscreen/index.html" id="canvas" frameborder="0"></iframe>
+            </div>
 
             <hr>
-            <button onclick="clearWalls()" class="btn btn-danger">Clear Walls</button>
+            <button id="buttonClearWalls" class="btn btn-danger">Clear Walls</button>
 
             <p>
                 This is a 2D implementation of <a href="https://www.wikiwand.com/en/Ray_casting">ray casting</a> in order to create the illusion of sight. <br>
